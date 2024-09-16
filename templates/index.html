@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetic Retinopathy Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Diabetic Retinopathy Detection</h1>
+    </header>
+    
+    <main>
+        <input type="file" id="imageUpload" accept="image/*">
+        <button onclick="predict()">Predict</button>
+        <div id="result"></div>
+    </main>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+</body>
+</html>
